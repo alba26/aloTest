@@ -19,7 +19,13 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         print("Alo")
         myButton.backgroundColor = .black
-        myButton.isUserInteractionEnabled = true
+        myButton.isUserInteractionEnabled = false
+//        print(UserDefaults.standard.string(forKey: "testFirstButton"))
+        if UserDefaults.standard.string(forKey: "testFirstButton") == nil{
+            UserDefaults.standard.set("AlreadyClicked", forKey: "testFirstButton")
+        } else{
+            print("already clicked")
+        }
     }
 }
 
