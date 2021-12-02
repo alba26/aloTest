@@ -15,5 +15,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func buttonPressed(_ sender: Any) {
+        print("Alo")
+    }
 }
 
