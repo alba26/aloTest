@@ -25,9 +25,12 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NsO-HI-CaB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKg-6L-SDb">
-                                <rect key="frame" x="155" y="312" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HAI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKg-6L-SDb">
+                                <rect key="frame" x="118" y="480" width="28" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="A1v-Ny-QHe"/>
+                                    <constraint firstAttribute="height" constant="21" id="vWn-NP-e3N"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,6 +38,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MKg-6L-SDb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="436" id="AeA-3a-Eam"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MKg-6L-SDb" secondAttribute="bottom" constant="361" id="AkB-KR-Xyz"/>
+                            <constraint firstItem="MKg-6L-SDb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="118" id="aBv-Eh-xDa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MKg-6L-SDb" secondAttribute="trailing" constant="268" id="yUz-A7-Ogj"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myButton" destination="Qi1-Nd-ZVn" id="knT-8G-Qxd"/>
